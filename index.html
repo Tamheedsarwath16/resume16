@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Comapatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/loggoo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+    
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Computer Science <p1>Student</p1></p>
+                <h1>Hi,I'm <span>Tamheed</span><br>Sarwath From<br>Bangalore,India</h1>
+            </div>
+        </div>
+    </div>
+<!----about------------->
+<div id ="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/userr.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I'm a final year student of Bachelors of Engineering in Computer Science,
+                    Don Bosco Institute Of Technology,Bangalore,India.I'm passionate about using my
+                     skills and knowledge to develop innovative solutions to complex problems and 
+                     excited to continue learning and growing as I embark on my career in the tech industry.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('eductaion')">Eductaion</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages:</span><br>C,C++,Java,Python,SQL</li>
+                        <li><span>Data Science:</span><br>Python with numpy,pandas and matplotlib,Pyspark,Time Series Analysis,Excel</li>
+                        <li><span>Front-end Technologies:</span><br>HTML,CSS,JavaScript</li>
+                        <li><span>Database Management:</span><br>MySQL,MongoDB</li>
+                        <li><span>Cloud Computing:</span><br>Google Cloud Platform,GoogleCloud SDK,Networking</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Data Science Intern</span><br>• Proficient in Python, and data manipulation tools like Pandas and NumPy.<br>
+                            • Solid foundation in data preprocessing, feature engineering, and data visualization.<br>
+                            • Developed and implemented Sales Analysis project which Analyze sales data for a small
+                            business, identify trends and make sales predictions.
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="eductaion">
+                    <ul>
+                        <li><span>2020-Current</span><br>Computer Science & Engineering<br>Grade(CGPA):8.6<br>DBIT Bangalore</li>
+                        <li><span>2020</span><br>PUC(PCMB)<br>Grade(Percentage):91<br>Cambridge PU College Channapatna,Ramanagara</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------projects-------->
+<div id="project">
+    <div class="container">
+        <h5 class="sub-title">Projects</h5>
+            <div class="proj-list">
+                <div class ="proj">
+                    <img src="images/saa.jpeg">
+                    <div class="layer">
+                        <h3>Sales Analysis and Prediction</h3>
+                        <p>Sales analysis aims to understand business
+                            performance by historical sales data to gain valuable insights.
+                           </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+
+                </div>
+                <div class="proj">
+                    <img src="images/medicine.png">
+                    <div class="layer">
+                        <h4>Medicine Reminder Andriod App</h4>
+                        <p>The application allows the user to store pill objects an multiple alarms for those pills.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        
+                    </div>
+
+                </div>
+                <div class="proj">
+                    <img src="images/airlines.png">
+                    <div class="layer">
+                        <h4>Airlines Ticket Booking System</h4>
+                        <p>It helps the customer to book their airlines tickets without going booking counter.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!--------------------------------contact-------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+               <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>tamheedsarwath12@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>6361348552</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+                <a href="images/tamheedsarwath_resume.pdf" download="" class="btn btn2">Download CV</a>
+               
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+                
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>Copyright Sarwath, Made with <i class="fa-solid fa-heart"></i> Self Learning</p>
+    </div>
+  
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-links");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab")
+        
+    }
+    
+</script>
+<script>
+    var sidemeu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+         
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+         
+    }
+    
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyc-FLwyt3a6hI3sY40o7VcMAPcWuqbsml3Lozzaq_gDgB3Ri6GAdNVz75W6NGpQ7JZIg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
